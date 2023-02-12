@@ -1,0 +1,213 @@
+.header {
+  overflow: hidden;
+  padding: 0 40px 0 40px;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #e4e4e4;
+  background-color: #fff;
+  align-items: center;
+  display: flex;
+  z-index: 2; /* Sit on top */
+  justify-content: space-between;
+}
+
+.header a {
+  float: left;
+  color: #303030;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+
+  justify-content: center;
+
+  justify-content: center;
+}
+.headerleft {
+  display: flex;
+}
+.searchcontainer {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40px;
+  margin-left: 40px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  position: relative;
+}
+
+.search {
+  background-color: #f1f3f4;
+  width: 100%;
+  margin: auto 10 auto 0;
+  outline: none;
+  align-items: center;
+  border: 0px;
+  color: #838383;
+  cursor: text;
+  font-size: 13px;
+  border-radius: 7px;
+  padding: 0 48px 0 10px;
+  height: 100%;
+  z-index: 99999999999; /* Sit on top */
+  display: flex;
+  transition: 0.2s ease-in-out;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.search:hover {
+  color: #2f2f2f;
+}
+.logocontainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 23px;
+  padding: 0 0;
+  position: relative;
+  margin: auto 0;
+}
+
+.logo {
+  width: auto;
+  height: 100%;
+}
+
+.header a:hover {
+  color: #797979;
+}
+
+.headerright {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 44px;
+}
+
+.createetiket {
+  padding: 0 20px;
+  height: 44px;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #ff003d;
+  color: #ff003d !important;
+  background-color: #fff;
+  border-radius: 22px;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.createetiketicon {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.createetiket:hover {
+  color: #fff !important;
+  background-color: #ff003d;
+}
+.modalsearchclose {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  position: fixed; /* Stay in place */
+  z-index: 9999999999; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.modalsearch {
+  display: flex; /* Hidden by default */
+  flex-direction: column;
+  position: fixed; /* Stay in place */
+  z-index: 999999999999999999; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  text-align: center;
+  left: 0;
+  top: 0px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.modalsearch:active {
+  border: 0px solid #fff;
+  outline: none;
+}
+
+.modalsearch:focus {
+  border: 0px solid #fff;
+  outline: none;
+}
+
+.searchinput {
+  background-color: #fff;
+  width: 100%;
+  outline: none;
+  border: 0px;
+  color: #303030;
+  box-shadow: 0 1px 3px rgb(187 187 187);
+  height: 50px;
+  cursor: text;
+  font-size: 16px;
+  border-radius: 7px;
+  transition: 0.2s ease-in-out;
+  margin-left: 25px;
+  padding: 10px 20px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.searchbar {
+  color: #303030;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.searchbarinput {
+  display: flex;
+  flex-direction: row;
+}
+.searchvalue {
+  margin: 20px 0 0 0;
+  box-shadow: 0 1px 3px rgb(187 187 187);
+  background-color: #fff;
+
+  border-radius: 7px;
+  width: 100%;
+}
+.searchicon {
+  color: #303030;
+  height: 50px;
+  margin-left: -50px;
+  padding-left: -50px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.searchicon:hover {
+  color: #787676;
+}
+.dropdownheader {
+  top: 0px;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  left: 0;
+}
