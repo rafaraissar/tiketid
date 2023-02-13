@@ -92,9 +92,8 @@ export default function Upcooming() {
                 <CardActionArea>
                   <Image
                     className={styles.upcoomingimg}
-                    width="0"
-                    height="0"
-                    sizes="100vw"
+                    width={280}
+                      height={210}
                     alt={item.title}
                     src={item.img}
                   />
