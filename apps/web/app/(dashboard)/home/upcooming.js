@@ -22,7 +22,7 @@ export default function Upcooming() {
     {
       title: "Festival Pesta Rakyart",
       img: "/event/1.jpg",
-      price: "Rp. 215.000",
+      price: "Rp. 214.000",
     },
     {
       title: "Hajatan Anak Medan 2023 - Event",
