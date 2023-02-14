@@ -11,6 +11,7 @@ import { styled, alpha } from "@mui/material/styles";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import "./Dropdown.css";
 
 const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
@@ -86,7 +87,19 @@ export default function Header() {
                   <ArrowBackIcon />
                 </label>
 
-                <input type="text" id="search" className={styles.searchinput} />
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Search"
+                  className={styles.searchinput}
+                />
+                <button
+                  onClick={handleClose}
+                  className={styles.searchiconclose}
+                  tabindex="0"
+                >
+                  Cancel
+                </button>
               </div>
 
               <div className={styles.searchvalue} onClick={handleClose}>
@@ -97,7 +110,11 @@ export default function Header() {
         </div>
       </div>
       <div className={styles.headerright}>
-        <label htmlFor="search" onClick={handleOpen}>
+        <label
+          htmlFor="search"
+          onClick={handleOpen}
+          className={styles.searchmobileiconlabel}
+        >
           <SearchIcon className={styles.searchmobileicon} />
         </label>
         <MenuIcon className={styles.menumobileicon} />
