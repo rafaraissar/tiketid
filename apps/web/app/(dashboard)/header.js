@@ -91,8 +91,10 @@ export default function Header() {
                   type="search"
                   id="search"
                   placeholder="Search"
+                  enterkeyhint="search"
                   className={styles.searchinput}
                 />
+
                 <button
                   onClick={handleClose}
                   className={styles.searchiconclose}
