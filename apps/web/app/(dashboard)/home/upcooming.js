@@ -9,8 +9,8 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "./Upcooming.css";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -84,7 +84,9 @@ export default function Upcooming() {
         slidesPerView={4}
         spaceBetween={10}
         navigation={true}
+        loop={true}
         modules={[Navigation]}
+        className={styles.swiperupcooming}
       >
         {upcooming.map((item, index) => (
           <SwiperSlide>
@@ -94,8 +96,8 @@ export default function Upcooming() {
                   <div>
                     <Image
                       className={styles.upcoomingimg}
-                      width={280}
-                      height={210}
+                      width={288}
+                      height={216}
                       alt={item.title}
                       src={item.img}
                     />
@@ -104,8 +106,10 @@ export default function Upcooming() {
                   <CardContent>
                     <h3>{item.title}</h3>
                     <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with
-                      over
+                      Bandung, Jawa Barat
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      23 Feb 2023
                     </Typography>
                     <br />
                     <br />
@@ -120,6 +124,3 @@ export default function Upcooming() {
     </>
   );
 }
-export const config = {
-  unstable_runtimeJS: false,
-};

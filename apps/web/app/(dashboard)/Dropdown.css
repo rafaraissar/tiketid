@@ -6,6 +6,8 @@ ul {
 }
 
 .MuiPaper-root {
+  border-radius: 0 0 10px 10px !important;
+
   width: 100%;
   left: 0 !important;
   top: 52px !important;

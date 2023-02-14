@@ -72,7 +72,7 @@ export default function Mainbanner() {
               alt="slide"
               sizes="100vw"
               src="/poster/6.jpg"
-            />{" "}
+            />
           </Link>
         </SwiperSlide>
       </Swiper>

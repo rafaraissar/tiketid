@@ -4,8 +4,7 @@
 }
 
 .swiper-slide {
-  text-align: left;
-
+  text-align: left !important;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;

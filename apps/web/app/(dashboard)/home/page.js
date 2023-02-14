@@ -11,6 +11,7 @@ export default function Home() {
       <div className={styles.contentitem}>
         <Upcooming />
       </div>
+      <br />
     </div>
   );
 }

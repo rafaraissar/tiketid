@@ -21,9 +21,9 @@
   height: 100%;
 }
 .upcoomingimg {
-  border-radius: 10px 10px 0 0;
-  width: 280px;
-  height: 210px;
+  border-radius: 4px 4px 0 0;
+  width: 288px;
+  height: 216px;
 }
 .titlecontentcontainer {
   margin-bottom: 15px;
@@ -46,7 +46,9 @@
 .titlecontentview:hover {
   color: #ff7897;
 }
-
+.swiperupcooming {
+  padding: 5px;
+}
 @media screen and (max-width: 800px) {
   .contenthome {
     padding-right: 30px;
