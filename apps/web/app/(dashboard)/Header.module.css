@@ -236,10 +236,10 @@
   position: fixed !important;
 }
 .menumobileicon {
-  display: none;
+  display: none !important;
 }
 .searchmobileicon {
-  display: none;
+  display: none !important;
 }
 .searchiconclose {
   display: none;
