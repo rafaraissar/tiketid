@@ -69,14 +69,20 @@ export default function Header() {
             Tentang Kami
           </Link>
           <Menu
-            className={styles.dropdownheader}
+            className={styles.dropdownheaderr}
             anchorEl={anchorEl}
             open={openn}
             onClose={handleClosee}
           >
-            <MenuItem onClick={handleClosee}>Profile</MenuItem>
-            <MenuItem onClick={handleClosee}>My account</MenuItem>
-            <MenuItem onClick={handleClosee}>Logout</MenuItem>
+            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
+              Profile
+            </MenuItem>
+            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
+              My account
+            </MenuItem>
+            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
+              Logout
+            </MenuItem>
           </Menu>
         </div>
         <Link href="/help">Tentang Kami</Link>

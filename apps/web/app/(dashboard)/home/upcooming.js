@@ -22,7 +22,7 @@ export default function Upcooming() {
     {
       title: "Festival Pesta Rakyart",
       img: "/event/1.jpg",
-      price: "Rp. 214.000",
+      price: "Rp. 213.000",
     },
     {
       title: "Hajatan Anak Medan 2023 - Event",
@@ -67,7 +67,7 @@ export default function Upcooming() {
     {
       title: "Watermelon",
       img: "/event/2.jpg",
-      price: "$12.20",
+      price: "$12.00",
     },
   ];
 
@@ -76,7 +76,8 @@ export default function Upcooming() {
       <div className={styles.titlecontentcontainer}>
         <h2 className={styles.titlecontent}>Upcooming Event</h2>
         <Link href="/id" className={styles.titlecontentview}>
-          Lihat Semua <KeyboardArrowRightIcon />
+          Lihat Semua
+          <KeyboardArrowRightIcon />
         </Link>
       </div>
       <Swiper
@@ -90,13 +91,15 @@ export default function Upcooming() {
             <Link href="/id" className={styles.titlecontent}>
               <Card sx={{ maxWidth: 280 }}>
                 <CardActionArea>
-                  <Image
-                    className={styles.upcoomingimg}
-                    width={280}
+                  <div>
+                    <Image
+                      className={styles.upcoomingimg}
+                      width={280}
                       height={210}
-                    alt={item.title}
-                    src={item.img}
-                  />
+                      alt={item.title}
+                      src={item.img}
+                    />
+                  </div>
 
                   <CardContent>
                     <h3>{item.title}</h3>
