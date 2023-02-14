@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -18,6 +18,22 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
 export default function Upcooming() {
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    });
+    setWindowSize({
+      width: window.innerWidth,
+    });
+  }, []);
+
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+  });
+
+  const isDesktop = windowSize.width >= 800;
   const upcooming = [
     {
       title: "Festival Pesta Rakyart",
@@ -81,7 +97,7 @@ export default function Upcooming() {
         </Link>
       </div>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={isDesktop ? 4 : 1}
         spaceBetween={10}
         navigation={true}
         loop={true}
