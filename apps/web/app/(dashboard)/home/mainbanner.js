@@ -36,6 +36,20 @@ export default function Mainbanner() {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
       >
+        {" "}
+        <SwiperSlide>
+          <Link href="/help" className={styles.mySlidesfadeimg}>
+            <Image
+              priority
+              className={styles.mySlidesfadeimg}
+              width="0"
+              height="0"
+              sizes="100vw"
+              alt="slide"
+              src="/poster/1.jpg"
+            />
+          </Link>
+        </SwiperSlide>
         <SwiperSlide>
           <Link href="/help" className={styles.mySlidesfadeimg}>
             <Image
