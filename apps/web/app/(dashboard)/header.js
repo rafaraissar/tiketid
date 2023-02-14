@@ -7,7 +7,38 @@ import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Menu from "@mui/material/Menu";
+import { styled, alpha } from "@mui/material/styles";
 import MenuItem from "@mui/material/MenuItem";
+import "./Dropdown.css";
+
+const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
+  "& .MuiPaper-root": {
+    borderRadius: 6,
+
+    color:
+      theme.palette.mode === "light"
+        ? "rgb(55, 65, 81)"
+        : theme.palette.grey[300],
+
+    "& .MuiMenu-list": {
+      padding: "4px 0",
+    },
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      "&:active": {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity
+        ),
+      },
+    },
+  },
+}));
+
 export default function Header() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -65,10 +96,8 @@ export default function Header() {
       </div>
       <div className={styles.headerright}>
         <div>
-          <Link href="/help" onMouseOver={handleClick}>
-            Tentang Kami
-          </Link>
-          <Menu
+          <div onClick={handleClick}>Tentang Kami</div>
+          <StyledMenu
             className={styles.dropdownheaderr}
             anchorEl={anchorEl}
             open={openn}
@@ -77,13 +106,7 @@ export default function Header() {
             <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
               Profile
             </MenuItem>
-            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
-              My account
-            </MenuItem>
-            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
-              Logout
-            </MenuItem>
-          </Menu>
+          </StyledMenu>
         </div>
         <Link href="/help">Tentang Kami</Link>
         <Link href="/id">Pusat Bantuan</Link>

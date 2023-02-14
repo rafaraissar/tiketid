@@ -214,12 +214,10 @@
   right: 0;
 }
 .dropdownheaderr {
-  top: 35px;
+  top: 28px;
   border-radius: 8px !important;
-  box-shadow: none !important;
   width: 100% !important;
   right: 0;
   margin-right: 0;
   position: fixed !important;
-  z-index: 1;
 }
