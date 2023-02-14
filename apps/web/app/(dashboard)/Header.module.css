@@ -263,7 +263,7 @@
   }
   .menumobileicon {
     color: #303030;
-    display: block;
+    display: block !important;
     font-size: 32px !important;
     font-weight: bold !important;
     margin-left: 10px;
@@ -273,7 +273,7 @@
   }
   .searchmobileicon {
     color: #303030;
-    display: block;
+    display: block !important;
     font-size: 28px !important;
     font-weight: bold !important;
     margin-left: 10px;
