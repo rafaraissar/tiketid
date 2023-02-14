@@ -33,7 +33,8 @@ export default function Upcooming() {
     width: undefined,
   });
 
-  const isDesktop = windowSize.width >= 800;
+  const isMobile = windowSize.width <= 900;
+  const isTablet = windowSize.width <= 1250;
   const upcooming = [
     {
       title: "Festival Pesta Rakyart",
@@ -97,7 +98,7 @@ export default function Upcooming() {
         </Link>
       </div>
       <Swiper
-        slidesPerView={isDesktop ? 4 : 1}
+        slidesPerView={(isMobile && 1) || (isTablet && 3) || "4"}
         spaceBetween={10}
         navigation={true}
         loop={true}
@@ -122,7 +123,7 @@ export default function Upcooming() {
                   <CardContent>
                     <h3>{item.title}</h3>
                     <Typography variant="body2" color="text.secondary">
-                      Bandung, Jawa Barat
+                      Bandung, Jawa Barat{windowSize.width}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       23 Feb 2023

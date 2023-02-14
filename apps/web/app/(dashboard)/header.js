@@ -10,6 +10,7 @@ import Menu from "@mui/material/Menu";
 import { styled, alpha } from "@mui/material/styles";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MenuIcon from "@mui/icons-material/Menu";
 import "./Dropdown.css";
 
 const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
@@ -67,7 +68,7 @@ export default function Header() {
           />
         </Link>
         <div>
-          <form className={styles.searchcontainer}>
+          <div className={styles.searchcontainer}>
             <label
               htmlFor="search"
               onClick={handleOpen}
@@ -76,7 +77,7 @@ export default function Header() {
               <SearchIcon />
               &nbsp;&nbsp;Cari event disini...
             </label>
-          </form>
+          </div>
 
           <div className={open ? styles.modalsearch : styles.modalsearchclose}>
             <div className={styles.searchbar}>
@@ -96,6 +97,10 @@ export default function Header() {
         </div>
       </div>
       <div className={styles.headerright}>
+        <label htmlFor="search" onClick={handleOpen}>
+          <SearchIcon className={styles.searchmobileicon} />
+        </label>
+        <MenuIcon className={styles.menumobileicon} />
         <div>
           <div onClick={handleClick} className={styles.headerrighttext}>
             Fitur Kami&nbsp;
