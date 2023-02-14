@@ -9,6 +9,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Menu from "@mui/material/Menu";
 import { styled, alpha } from "@mui/material/styles";
 import MenuItem from "@mui/material/MenuItem";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./Dropdown.css";
 
 const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
@@ -97,7 +98,8 @@ export default function Header() {
       <div className={styles.headerright}>
         <div>
           <div onClick={handleClick} className={styles.headerrighttext}>
-            Tentang Kami
+            Fitur Kami&nbsp;
+            <KeyboardArrowDownIcon className={styles.createetiketicon} />
           </div>
           <StyledMenu
             className={styles.dropdownheaderr}
@@ -110,7 +112,6 @@ export default function Header() {
             </MenuItem>
           </StyledMenu>
         </div>
-        <Link href="/help">Tentang Kami</Link>
         <Link href="/id">Pusat Bantuan</Link>
         <Link href="/home">Masuk/Daftar</Link>
         <a href="#about" className={styles.createetiket}>
