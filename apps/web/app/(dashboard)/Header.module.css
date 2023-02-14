@@ -88,7 +88,11 @@
   align-items: center;
   height: 44px;
 }
-
+.headerrighttext {
+  color: #303030;
+  text-align: center;
+  font-size: 15px;
+}
 .createetiket {
   padding: 0 20px;
   height: 44px;

@@ -96,7 +96,9 @@ export default function Header() {
       </div>
       <div className={styles.headerright}>
         <div>
-          <div onClick={handleClick}>Tentang Kami</div>
+          <div onClick={handleClick} className={styles.headerrighttext}>
+            Tentang Kami
+          </div>
           <StyledMenu
             className={styles.dropdownheaderr}
             anchorEl={anchorEl}
