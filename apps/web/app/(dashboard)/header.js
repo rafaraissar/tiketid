@@ -57,7 +57,7 @@ export default function Header() {
               </div>
 
               <div className={styles.searchvalue} onClick={handleClose}>
-                asd
+                asdd
               </div>
             </div>
           </div>
@@ -96,6 +96,3 @@ export default function Header() {
     </div>
   );
 }
-export const config = {
-  unstable_runtimeJS: false,
-};
