@@ -49,10 +49,10 @@ export default function Header() {
           <div className={open ? styles.modalsearch : styles.modalsearchclose}>
             <div className={styles.searchbar}>
               <div className={styles.searchbarinput}>
-                <ArrowBackIcon
-                  onClick={handleClose}
-                  className={styles.searchicon}
-                />
+                <label onClick={handleClose} className={styles.searchicon}>
+                  <ArrowBackIcon />
+                </label>
+
                 <input type="text" id="search" className={styles.searchinput} />
               </div>
 
