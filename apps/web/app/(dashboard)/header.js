@@ -88,7 +88,7 @@ export default function Header() {
                 </label>
 
                 <input
-                  type="text"
+                  type="search"
                   id="search"
                   placeholder="Search"
                   className={styles.searchinput}
