@@ -65,6 +65,7 @@ export default function Header() {
             sizes="100vw"
             className={styles.logo}
             alt="logo"
+            title="Beranda Eventiket"
             priority
           />
         </Link>
@@ -74,6 +75,7 @@ export default function Header() {
               htmlFor="search"
               onClick={handleOpen}
               className={styles.search}
+              title="Cari event disini..."
             >
               <SearchIcon />
               &nbsp;&nbsp;Cari event disini...
