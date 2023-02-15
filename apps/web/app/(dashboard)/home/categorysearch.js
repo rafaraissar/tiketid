@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 
-import Image from "next/image";
-
 import styles from "./Home.module.css";
 
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -42,3 +40,6 @@ export default function Categorysearch() {
     </>
   );
 }
+export const config = {
+  unstable_runtimeJS: false,
+};
