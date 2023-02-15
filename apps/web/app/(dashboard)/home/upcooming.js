@@ -94,7 +94,7 @@ export default function Upcooming() {
         <h2 className={styles.titlecontent}>Upcooming Event</h2>
         <Link href="/id" className={styles.titlecontentview}>
           Lihat Semua
-          <KeyboardArrowRightIcon />
+          <KeyboardArrowRightIcon className={styles.titlecontentviewicon} />
         </Link>
       </div>
       <Swiper

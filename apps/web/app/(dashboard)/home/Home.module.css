@@ -51,7 +51,21 @@
 }
 @media screen and (max-width: 800px) {
   .contenthome {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  .contentitem {
+    padding: 30px 0px 0 0px;
+  }
+  .titlecontent {
+    font-size: 18px;
+  }
+  .titlecontentview {
+    font-size: 14px;
+  }
+  .titlecontentviewicon {
+    font-size: 17px;
+    align-items: baseline;
   }
 }
