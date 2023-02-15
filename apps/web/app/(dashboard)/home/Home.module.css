@@ -46,9 +46,7 @@
 .titlecontentview:hover {
   color: #ff7897;
 }
-.swiperupcooming {
-  padding: 5px !important;
-}
+
 .categorysearchcontainer {
   border-radius: 10px;
   display: flex;
@@ -76,6 +74,10 @@
   background-color: #ff003d;
   color: #fff;
 }
+
+.swiperupcooming {
+  padding: 5px !important;
+}
 @media screen and (max-width: 800px) {
   .contenthome {
     padding-right: 20px;
@@ -94,5 +96,27 @@
   .titlecontentviewicon {
     font-size: 17px;
     align-items: baseline;
+  }
+
+  .categorysearchcontainer {
+    gap: 12px 5px;
+
+    justify-content: left;
+  }
+  .categorysearchcontainer:hover :not(:hover) {
+    opacity: 1;
+  }
+  .categorysearchitem {
+    padding: 0 20px;
+    border-radius: 17px;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+    height: 34px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    color: rgba(15, 15, 15);
+    transition: 0.2s ease-in-out;
   }
 }
