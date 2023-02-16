@@ -100,11 +100,21 @@
 
   .categorysearchcontainer {
     gap: 12px 5px;
-
+    width: 200%;
+    margin-left: 20px;
+    margin-right: 20px;
     justify-content: left;
   }
   .categorysearchcontainer:hover :not(:hover) {
     opacity: 1;
+  }
+  .categorysearchwrapper {
+    overflow-x: scroll;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .categorysearchwrapper::-webkit-scrollbar {
+    display: none;
   }
   .categorysearchitem {
     padding: 0 20px;
