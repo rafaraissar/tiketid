@@ -108,7 +108,7 @@ export default function Upcooming() {
         {upcooming.map((item, index) => (
           <SwiperSlide>
             <Link href="/id" className={styles.titlecontent}>
-              <Card sx={{ maxWidth: 280 }}>
+              <Card sx={{ maxWidth: 280 }} className={styles.cardupcooming}>
                 <CardActionArea>
                   <div>
                     <Image

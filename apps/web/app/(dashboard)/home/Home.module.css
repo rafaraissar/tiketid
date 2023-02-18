@@ -54,7 +54,7 @@
   justify-content: space-between;
   gap: 12px 10px;
 }
-.categorysearchcontainer:hover :not(:hover) {
+.categorysearchcontainer:hover > :not(:hover) {
   opacity: 0.5;
 }
 .categorysearchitem {
@@ -62,6 +62,7 @@
   border-radius: 17px;
   text-decoration: none;
   display: flex;
+  opacity: 1;
   font-size: 15px;
   height: 34px;
   align-items: center;
@@ -77,6 +78,10 @@
 
 .swiperupcooming {
   padding: 5px !important;
+}
+.cardupcooming {
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.2) 0px 1px 3px -1px !important;
 }
 @media screen and (max-width: 800px) {
   .contenthome {
