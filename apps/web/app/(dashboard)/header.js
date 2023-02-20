@@ -13,6 +13,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./Dropdown.css";
+import logoeventiket from "../../public/logo/logo.png";
 
 const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
   "& .MuiPaper-root": {
@@ -59,7 +60,7 @@ export default function Header() {
       <div className={styles.headerleft}>
         <Link className={styles.logocontainer} href="/home">
           <Image
-            src="/logo/logo.png"
+            src={logoeventiket}
             width="0"
             height="0"
             sizes="100vw"
