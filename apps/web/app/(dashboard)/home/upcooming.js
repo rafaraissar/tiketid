@@ -9,7 +9,7 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Error from "./error";
 import "./Upcooming.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -52,39 +52,39 @@ export default function Upcooming() {
       price: "Rp. 185.000",
     },
     {
-      title: "Lemon",
+      title: "Lemonnnnn nnn nnn nnn nnn a b c d",
       img: "/event/1.jpg",
-      price: "$5.30",
+      price: "Rp. 185.000",
     },
     {
       title: "Avocado",
       img: "/event/2.jpg",
-      price: "$15.70",
+      price: "Rp. 185.000",
     },
     {
       title: "Lemon 2",
       img: "/event/2.jpg",
-      price: "$8.00",
+      price: "Rp. 185.000",
     },
     {
       title: "Banana",
       img: "/event/2.jpg",
-      price: "$7.50",
+      price: "Rp. 185.000",
     },
     {
       title: "Watermelon",
       img: "/event/2.jpg",
-      price: "$12.20",
+      price: "Rp. 185.000",
     },
     {
       title: "Watermelon",
       img: "/event/2.jpg",
-      price: "$12.20",
+      price: "Rp. 185.000",
     },
     {
       title: "Watermelon",
       img: "/event/2.jpg",
-      price: "$12.00",
+      price: "Rp. 185.000",
     },
   ];
 
@@ -121,15 +121,15 @@ export default function Upcooming() {
                   </div>
 
                   <CardContent>
-                    <h3>{item.title}</h3>
+                    <h2 className={styles.upcoomingtitle}>{item.title}</h2>
                     <Typography variant="body2" color="text.secondary">
-                      Bandung, Jawa Barat{windowSize.width}
+                      Bandung, Jawa Barat
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       23 Feb 2023
                     </Typography>
                     <br />
-                    <br />
+                    <div className={styles.upcoominghr}></div>
                     <h2>{item.price}</h2>
                   </CardContent>
                 </CardActionArea>

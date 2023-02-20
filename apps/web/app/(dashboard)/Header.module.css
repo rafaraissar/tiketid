@@ -220,18 +220,12 @@
 .searchicon:hover {
   color: #787676;
 }
+
 .dropdownheader {
-  border-radius: 8px !important;
-  box-shadow: none !important;
-  width: 50vh !important;
-  margin: 5px;
-  right: 0;
-}
-.dropdownheaderr {
   top: 28px !important;
   border-radius: 8px !important;
   width: 100% !important;
-  right: 0;
+  left: 0;
   margin-right: 0;
   position: fixed !important;
 }
@@ -243,6 +237,56 @@
 }
 .searchiconclose {
   display: none;
+}
+.dropdownheaderwrapper {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  right: 0;
+  display: flex;
+}
+.dropdownheaderitem {
+  width: 50%;
+  padding: 10px;
+  margin: 25px 25px;
+  display: flex;
+  gap: 10px;
+}
+.dropdownheaderitemvl {
+  border-left: 1px solid #e4e4e4;
+  margin: 20px auto;
+}
+.fiturmoreimg {
+  width: 35%;
+  height: auto;
+}
+.fiturmore {
+  width: 35%;
+  display: flex;
+  justify-items: center;
+  margin: auto 0;
+  flex-direction: column;
+  height: auto;
+}
+.fiturmore > p {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0;
+  font-size: 15px;
+}
+.fiturmorelink {
+  color: #ff003d;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fiturmorelink:hover {
+  opacity: 0.6;
+}
+.fiturmorelinkicon {
+  font-size: 18px !important;
+  font-weight: bold !important;
 }
 @media only screen and (max-width: 1250px) {
   .header {

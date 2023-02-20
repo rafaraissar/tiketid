@@ -11,7 +11,7 @@ import { styled, alpha } from "@mui/material/styles";
 import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./Dropdown.css";
 
 const StyledMenu = styled((props) => <Menu {...props} />)(({ theme }) => ({
@@ -128,14 +128,42 @@ export default function Header() {
             <KeyboardArrowDownIcon className={styles.createetiketicon} />
           </div>
           <StyledMenu
-            className={styles.dropdownheaderr}
+            className={styles.dropdownheader}
             anchorEl={anchorEl}
             open={openn}
             onClose={handleClosee}
           >
-            <MenuItem onClick={handleClosee} className={styles.dropdownheader}>
-              Profile
-            </MenuItem>
+            <div className={styles.dropdownheaderwrapper}>
+              <div className={styles.dropdownheaderitem}>a</div>
+              <div className={styles.dropdownheaderitemvl}></div>
+              <div className={styles.dropdownheaderitem}>
+                <Image
+                  src="/asset/fitur-more.png"
+                  draggable="false"
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  className={styles.fiturmoreimg}
+                  alt="fiturmore"
+                />
+                <div className={styles.fiturmore}>
+                  <h3>Eventiket Experience</h3>
+                  <p>
+                    Eventiket Experience Manager hadir dengan fitur-fitur
+                    andalan untuk mendukung keberlangsungan konser atau music
+                    experience Anda.
+                  </p>
+                  <Link
+                    onClick={handleClosee}
+                    className={styles.fiturmorelink}
+                    href="/id"
+                  >
+                    Lihat semua fitur&nbsp;
+                    <ArrowForwardIcon className={styles.fiturmorelinkicon} />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </StyledMenu>
         </div>
         <Link href="/id">Pusat Bantuan</Link>
