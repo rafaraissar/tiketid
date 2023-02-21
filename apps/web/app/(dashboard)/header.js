@@ -1,5 +1,6 @@
 "use client";
-import * as React from "react";
+import React, { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
@@ -8,7 +9,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Menu from "@mui/material/Menu";
 import { styled, alpha } from "@mui/material/styles";
-import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -59,6 +59,7 @@ export default function Header() {
   const handleClosee = () => {
     setAnchorEl(null);
   };
+
   return (
     <div className={styles.header}>
       <div className={styles.headerleft}>

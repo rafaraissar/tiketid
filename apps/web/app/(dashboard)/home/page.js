@@ -1,3 +1,5 @@
+"use client";
+import React, { useState, useEffect } from "react";
 import Categorysearch from "./categorysearch";
 import styles from "./Home.module.css";
 import Mainbanner from "./mainbanner";
