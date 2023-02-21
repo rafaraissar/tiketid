@@ -246,8 +246,18 @@
   display: flex;
 }
 .dropdownheaderitem {
+  flex-wrap: wrap;
   width: 50%;
   padding: 10px;
+  margin: 25px 25px;
+  display: flex;
+  gap: 10px;
+}
+.dropdownheaderitemleft {
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 10px;
+  padding-left: 200px;
   margin: 25px 25px;
   display: flex;
   gap: 10px;
@@ -268,10 +278,23 @@
   flex-direction: column;
   height: auto;
 }
+.fiturmoreleft {
+  text-decoration: none;
+  width: 240px;
+  color: #303030;
+  display: flex;
+  margin: auto 0 auto auto;
+  right: 0;
+  flex-direction: row;
+  height: auto;
+}
+.fiturmoreleft:hover {
+  color: #ff003d;
+}
 .fiturmore > p {
   color: rgba(0, 0, 0, 0.6);
-  margin: 10px 0;
-  font-size: 15px;
+  margin: 5px 0;
+  font-size: 13px;
 }
 .fiturmorelink {
   color: #ff003d;
@@ -287,6 +310,14 @@
 .fiturmorelinkicon {
   font-size: 18px !important;
   font-weight: bold !important;
+}
+.fiturtextitem {
+  margin-left: 10px;
+}
+.fiturtextitem > p {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 5px 0;
+  font-size: 13px;
 }
 @media only screen and (max-width: 1250px) {
   .header {

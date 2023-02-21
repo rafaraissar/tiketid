@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import "./Dropdown.css";
 import logoeventiket from "../../public/logo/logo.png";
 
@@ -135,7 +136,60 @@ export default function Header() {
             onClose={handleClosee}
           >
             <div className={styles.dropdownheaderwrapper}>
-              <div className={styles.dropdownheaderitem}>a</div>
+              <div className={styles.dropdownheaderitemleft}>
+                <Link
+                  href="/id"
+                  onClick={handleClosee}
+                  className={styles.fiturmoreleft}
+                >
+                  <ConfirmationNumberIcon />
+                  <div className={styles.fiturtextitem}>
+                    <h4>Ticket Shop</h4>
+                    <p>
+                      Sell tickets and more with an on-brand buying experience
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href="/id"
+                  onClick={handleClosee}
+                  className={styles.fiturmoreleft}
+                >
+                  <ConfirmationNumberIcon />
+                  <div className={styles.fiturtextitem}>
+                    <h4>Ticket Shop</h4>
+                    <p>
+                      Sell tickets and more with an on-brand buying experience
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href="/id"
+                  onClick={handleClosee}
+                  className={styles.fiturmoreleft}
+                >
+                  <ConfirmationNumberIcon />
+                  <div className={styles.fiturtextitem}>
+                    <h4>Ticket Shop</h4>
+                    <p>
+                      Sell tickets and more with an on-brand buying experience
+                    </p>
+                  </div>
+                </Link>
+                <Link
+                  href="/id"
+                  onClick={handleClosee}
+                  className={styles.fiturmoreleft}
+                >
+                  <ConfirmationNumberIcon />
+                  <div className={styles.fiturtextitem}>
+                    <h4>Ticket Shop</h4>
+                    <p>
+                      Sell tickets and more with an on-brand buying experience
+                    </p>
+                  </div>
+                </Link>
+              </div>
               <div className={styles.dropdownheaderitemvl}></div>
               <div className={styles.dropdownheaderitem}>
                 <Image
@@ -148,7 +202,7 @@ export default function Header() {
                   alt="fiturmore"
                 />
                 <div className={styles.fiturmore}>
-                  <h3>Eventiket Experience</h3>
+                  <h4>Eventiket Experience</h4>
                   <p>
                     Eventiket Experience Manager hadir dengan fitur-fitur
                     andalan untuk mendukung keberlangsungan konser atau music
