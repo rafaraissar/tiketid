@@ -13,6 +13,9 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
+import SendToMobileIcon from "@mui/icons-material/SendToMobile";
+import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
+import CloudDoneIcon from "@mui/icons-material/CloudDone";
 import "./Dropdown.css";
 import logoeventiket from "../../public/logo/logo.png";
 
@@ -155,9 +158,9 @@ export default function Header() {
                   onClick={handleClosee}
                   className={styles.fiturmoreleft}
                 >
-                  <ConfirmationNumberIcon />
+                  <SendToMobileIcon />
                   <div className={styles.fiturtextitem}>
-                    <h4>Ticket Shop</h4>
+                    <h4>Online Promotion</h4>
                     <p>
                       Sell tickets and more with an on-brand buying experience
                     </p>
@@ -168,9 +171,9 @@ export default function Header() {
                   onClick={handleClosee}
                   className={styles.fiturmoreleft}
                 >
-                  <ConfirmationNumberIcon />
+                  <QrCodeScannerIcon />
                   <div className={styles.fiturtextitem}>
-                    <h4>Ticket Shop</h4>
+                    <h4>Door Management</h4>
                     <p>
                       Sell tickets and more with an on-brand buying experience
                     </p>
@@ -181,9 +184,9 @@ export default function Header() {
                   onClick={handleClosee}
                   className={styles.fiturmoreleft}
                 >
-                  <ConfirmationNumberIcon />
+                  <CloudDoneIcon />
                   <div className={styles.fiturtextitem}>
-                    <h4>Ticket Shop</h4>
+                    <h4>App & Integrations</h4>
                     <p>
                       Sell tickets and more with an on-brand buying experience
                     </p>
