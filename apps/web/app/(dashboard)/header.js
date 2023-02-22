@@ -112,9 +112,14 @@ export default function Header() {
                 </button>
               </div>
 
-              <div className={styles.searchvalue} onClick={handleClose}>
+              <Link
+                href="/id"
+                className={styles.searchvalue}
+                onClick={handleClose}
+              >
                 asdd
-              </div>
+              </Link>
+              <Link href="/id">aaa</Link>
             </div>
           </div>
         </div>
