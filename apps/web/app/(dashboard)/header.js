@@ -229,7 +229,7 @@ export default function Header() {
         <Link href="/home">Masuk/Daftar</Link>
         <Link href="/her" className={styles.createetiket}>
           <AddIcon className={styles.createetiketicon} />
-          &nbsp;Buat etikettt
+          &nbsp;Buat etiket
         </Link>
       </div>
     </div>
