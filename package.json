@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "tiketid",
+=======
+  "name": "tiketevent",
+>>>>>>> 716635c (update)
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -8,19 +12,28 @@
   ],
   "scripts": {
     "build": "turbo run build",
+<<<<<<< HEAD
     "dev": "turbo run dev --parallel",
+=======
+    "dev": "turbo run dev",
+>>>>>>> 716635c (update)
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
+<<<<<<< HEAD
     "turbo": "^1.8.2"
+=======
+    "turbo": "latest"
+>>>>>>> 716635c (update)
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@chakra-ui/react": "^2.5.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -37,6 +50,13 @@
     "styled-components": "^5.3.6",
     "swiper": "^9.0.3",
     "uikit": "^3.15.24"
+=======
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.10",
+    "swiper": "^9.0.5"
+>>>>>>> 716635c (update)
   },
   "packageManager": "npm@8.6.0"
 }
