@@ -38,11 +38,9 @@ export default function Mainbanner() {
       >
         {" "}
         <SwiperSlide>
-<<<<<<< HEAD
-          <Link href="/help" className={styles.mySlidesfadeimg}>
-=======
+ 
           <Link href="/her" className={styles.mySlidesfadeimg}>
->>>>>>> 716635c (update)
+ 
             <Image
               priority
               className={styles.mySlidesfadeimg}
@@ -55,11 +53,9 @@ export default function Mainbanner() {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-<<<<<<< HEAD
-          <Link href="/help" className={styles.mySlidesfadeimg}>
-=======
+ 
           <Link href="/her" className={styles.mySlidesfadeimg}>
->>>>>>> 716635c (update)
+ 
             <Image
               priority
               className={styles.mySlidesfadeimg}
@@ -72,11 +68,9 @@ export default function Mainbanner() {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-<<<<<<< HEAD
-          <Link href="/help" className={styles.mySlidesfadeimg}>
-=======
+ 
           <Link href="/her" className={styles.mySlidesfadeimg}>
->>>>>>> 716635c (update)
+ 
             <Image
               priority
               className={styles.mySlidesfadeimg}
@@ -89,11 +83,10 @@ export default function Mainbanner() {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-<<<<<<< HEAD
-          <Link href="/help" className={styles.mySlidesfadeimg}>
-=======
+ 
+       
           <Link href="/her" className={styles.mySlidesfadeimg}>
->>>>>>> 716635c (update)
+ 
             <Image
               priority
               className={styles.mySlidesfadeimg}

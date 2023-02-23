@@ -9,9 +9,4 @@ export default function Web() {
     </>
   );
 }
-<<<<<<< HEAD
-export const config = {
-  unstable_runtimeJS: false,
-};
-=======
->>>>>>> 716635c (update)
+  

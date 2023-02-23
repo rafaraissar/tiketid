@@ -227,18 +227,9 @@ export default function Header() {
         </div>
         <Link href="/id">Pusat Bantuan</Link>
         <Link href="/home">Masuk/Daftar</Link>
-<<<<<<< HEAD
-        <Link href="/help" className={styles.createetiket}>
+        <Link href="/her" className={styles.createetiket}>
           <AddIcon className={styles.createetiketicon} />
-          &nbsp;Buat etiket
-=======
-        <Link href="/her" >
-          <div className={styles.createetiket}>
-          <AddIcon className={styles.createetiketicon} />
-          &nbsp;Buat etiket
-          </div>
-          
->>>>>>> 716635c (update)
+          &nbsp;Buat etikett
         </Link>
       </div>
     </div>

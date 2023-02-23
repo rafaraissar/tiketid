@@ -6,15 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
+ 
     "lint": "next lint",
     "export": "next export"
   },
-  "dependencies": {
-    "swiper": "^9.0.3"
-=======
-    "lint": "next lint"
-  },
+ 
   "dependencies": {
     "@next/font": "13.1.6",
     "eslint": "8.34.0",
@@ -23,6 +19,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "ui": "*"
->>>>>>> 716635c (update)
+ 
   }
 }

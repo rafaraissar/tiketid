@@ -8,9 +8,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-<<<<<<< HEAD
-export const config = {
-  unstable_runtimeJS: false,
-};
-=======
->>>>>>> 716635c (update)
