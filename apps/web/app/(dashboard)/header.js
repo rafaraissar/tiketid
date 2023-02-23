@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
 
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
@@ -99,14 +99,14 @@ export default function Header() {
                   type="search"
                   id="search"
                   placeholder="Search"
-                  enterkeyhint="search"
+                  enterKeyHint="search"
                   className={styles.searchinput}
                 />
 
                 <button
                   onClick={handleClose}
                   className={styles.searchiconclose}
-                  tabindex="0"
+                  tabIndex="0"
                 >
                   Cancel
                 </button>
@@ -115,7 +115,6 @@ export default function Header() {
               <div className={styles.searchvalue} onClick={handleClose}>
                 asdd
               </div>
-              <div>a</div>
             </div>
           </div>
         </div>
