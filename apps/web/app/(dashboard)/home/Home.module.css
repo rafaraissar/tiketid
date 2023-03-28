@@ -87,13 +87,18 @@
 .upcoominghr {
   margin-bottom: 8px;
   margin-top: 8px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px dashed #c1c1c1;
 }
 .upcoomingtitle {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 250px;
+}
+.titlecontentviewicon {
+  height: 12px;
+  margin-left: 3px;
+  align-items: baseline;
 }
 @media screen and (max-width: 800px) {
   .contenthome {
@@ -111,7 +116,6 @@
     font-size: 14px;
   }
   .titlecontentviewicon {
-    font-size: 17px;
     align-items: baseline;
   }
 

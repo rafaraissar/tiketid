@@ -16,6 +16,7 @@ import ConfirmationNumberIcon from "@mui/icons-material/ConfirmationNumber";
 import SendToMobileIcon from "@mui/icons-material/SendToMobile";
 import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
 import CloudDoneIcon from "@mui/icons-material/CloudDone";
+
 import "./Dropdown.css";
 import logoeventiket from "../../public/logo/logo.png";
 
@@ -227,7 +228,7 @@ export default function Header() {
         </div>
         <Link href="/id">Pusat Bantuan</Link>
         <Link href="/home">Masuk/Daftar</Link>
-        <Link href="/help" className={styles.createetiket}>
+        <Link href="/id" className={styles.createetiket}>
           <AddIcon className={styles.createetiketicon} />
           &nbsp;Buat etiket
         </Link>

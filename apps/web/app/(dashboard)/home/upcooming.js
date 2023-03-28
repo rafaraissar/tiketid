@@ -7,9 +7,9 @@ import { CardActionArea } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Home.module.css";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Error from "./error";
+
 import "./Upcooming.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -94,7 +94,7 @@ export default function Upcooming() {
         <h2 className={styles.titlecontent}>Upcooming Event</h2>
         <Link href="/id" className={styles.titlecontentview}>
           Lihat Semua
-          <KeyboardArrowRightIcon className={styles.titlecontentviewicon} />
+          <FaChevronRight className={styles.titlecontentviewicon} />
         </Link>
       </div>
       <Swiper

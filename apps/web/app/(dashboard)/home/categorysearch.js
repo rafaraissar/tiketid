@@ -1,10 +1,9 @@
-"use client";
 import Link from "next/link";
 
 import styles from "./Home.module.css";
 
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
+import "./Upcooming.css";
+import { FaChevronRight } from "react-icons/fa";
 export default function Categorysearch() {
   return (
     <>
@@ -12,7 +11,7 @@ export default function Categorysearch() {
         <h2 className={styles.titlecontent}>Browse Category</h2>
         <Link href="/id" className={styles.titlecontentview}>
           Lihat Semua
-          <KeyboardArrowRightIcon className={styles.titlecontentviewicon} />
+          <FaChevronRight className={styles.titlecontentviewicon} />
         </Link>
       </div>
       <div className={styles.categorysearchwrapper}>

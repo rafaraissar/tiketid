@@ -9,6 +9,3 @@ export default function Web() {
     </>
   );
 }
-export const config = {
-  unstable_runtimeJS: false,
-};

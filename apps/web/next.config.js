@@ -5,7 +5,6 @@ const nextConfig = {
   },
   transpilePackages: ["ui"],
   reactStrictMode: true,
-  unstable_runtimeJS: false,
   swcMinify: true,
 };
 

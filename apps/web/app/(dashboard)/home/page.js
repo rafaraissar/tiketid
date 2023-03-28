@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Categorysearch from "./categorysearch";
 import styles from "./Home.module.css";
 import Mainbanner from "./mainbanner";
@@ -21,6 +20,3 @@ export default function Home() {
     </div>
   );
 }
-export const config = {
-  unstable_runtimeJS: false,
-};
